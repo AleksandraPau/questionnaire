@@ -6,17 +6,19 @@ namespace questionnaire
     {
 		public static void Main(string[] args)
 		{
+			Console.Write("Enter your name: ");
+			var Name = Console.ReadLine();
 
-			string MyName = "Sasha";
-			byte MyAge = 21;
-			bool HaveIApet = true;
-			double MyShoeSize = 40.5;
+			Console.Write("Enter your age: ");
+			var age = Convert.ToInt32(Console.ReadLine());
 
-			Console.WriteLine("My name is " + MyName);
-			Console.WriteLine("MyAge " + MyAge);
-			Console.WriteLine("Do I have a pet? " + HaveIApet);
-			Console.WriteLine("My shoe size is " + MyShoeSize);
+			Console.WriteLine("Your name is {0} and age is {1}", Name, age);
 
+			Console.Write("Enter your birthdate: ");
+
+			var birthdate = Console.ReadLine();
+
+			Console.WriteLine("Your birthdate is {0}", birthdate);
 		}
 	}
 }
